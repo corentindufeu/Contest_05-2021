@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<title>Accueil - Corentin Dufeu</title>
     <meta charset="UTF-8">
@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <div id="header" class="w-100 justify-content-between position-fixed">
+        <div id="header" class="w-100 justify-content-between">
             <div id="titleHeader" class="h-100">
                 <h1>Corentin Dufeu</h1>
             </div>
             <nav class="h-100">
                 <ul class="w-100 h-100">
                     <li class="headerButton position-relative">
-                        <a href="index">
+                        <a href="index.html">
                             <span>
                                 <span>
                                     <span data-attr-span="home">
@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="headerButton position-relative">
-                        <a>
+                        <a href="my_work.html">
                             <span>
                                 <span>
                                     <span data-attr-span="my work">
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="headerButton position-relative">
-                        <a>
+                        <a href="about_me.html">
                             <span>
                                 <span>
                                     <span data-attr-span="about me">
@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li class="headerButton position-relative">
-                        <a>
+                        <a href="contact.html">
                             <span>
                                 <span>
                                     <span data-attr-span="contact">
@@ -62,6 +62,24 @@
             </nav>
         </div>
     </header>
-
+    <main>
+        <div id="content">
+            <div id="alternanceAnnouncement" class="w-100">
+                <h4>Je suis actellement à la recherche d'une alternance !</h4>
+                <div class="h-100">
+                    <p>Vous recherchez un apprenti ?</p>
+                    <form action="contact.html">
+                        <button class="w-100 h-100 border-0">Contactez moi !</button>
+                    </form>
+                </div>
+            </div>
+            <div class="m-auto w-50">
+                <img src="../static/img/working.gif">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2021 Corentin Dufeu</p>
+    </footer>
 </body>
 </html>
