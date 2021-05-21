@@ -40,5 +40,10 @@ exemple_img_work sert d'exemple pour les fenêtres des différents projets de la
 Quant à l'image find_icon, il est présent sur les volets des fenêtres de projets, visibles quand la souris de 
 l'utilisateur survole le projet.
 
+L'ensemble des commits du projet sont disponibles via le dépôt GITHUB, dont la dernière version est présentes sur la 
+branche master. Les commits réalisés pendant la production sont quant à eux présent sur la branche dev.
+Lien pour cloner le projet : https://github.com/corentindufeu/Contest_05-2021.git
+Lien du projet : https://github.com/corentindufeu/Contest_05-2021
+
 L'ensemble du projet ne sert que de maquette, qui pourra optenir plus d'améliorations, me permettant ensuite de 
 l'intégrer à un projet plus vaste, en l'intégrant à un environnement MVT, et en y ajoutant une base de données.
