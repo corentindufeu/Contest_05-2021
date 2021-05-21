@@ -1,23 +1,24 @@
 
-@font-face {
-	font-family: NowAlt-Light;
-	src: url('../fonts/NowAlt-Light.otf');
-}
-@font-face {
-	font-family: Roboto-Light;
-	src: url('../fonts/Roboto-Light.ttf');
+body{
+    background-color: #19c3d4 !important;
+    font-family: NowAlt-Light !important;
 }
 
-body{
-    background-color: crimson;
+#content{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
 }
 
 /* --- Header --- */
 
 #header{
+    position: fixed;
+    top: 0;
     height: 60px;
     display: flex;
     flex-direction: row;
+    z-index: 1000;
 }
 #header:hover{
     transition: 1000ms;
@@ -25,7 +26,7 @@ body{
 }
 #header:not(:hover){
     transition: 1000ms;
-    background: transparent;
+    background: rgba(250, 250, 250, 0.8);
 }
 
 /*left*/
@@ -124,4 +125,108 @@ body{
     transition: 300ms;
     width: 100%;
     color: white;
+}
+
+/* --- Content Index --- */
+
+#alternanceAnnouncement{
+    height: 120px;
+    background-color: rgb(220, 20, 60);
+    position: absolute;
+    left: 0;
+    margin-top: -20px;
+}
+#alternanceAnnouncement h4{
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: 500;
+}
+#alternanceAnnouncement div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 10%;
+    top: 0;
+    background-color: tomato;
+    width: 300px;
+}
+#alternanceAnnouncement p{
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+}
+#alternanceAnnouncement form{
+    font-weight: 100;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    animation-name: goAlternanceAnimationForm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#alternanceAnnouncement button{
+    animation-name: goAlternanceAnimationButton;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: seashell;
+}
+#alternanceAnnouncement button:hover{
+    background-color: rgba(65, 105, 225, 0.692) !important;
+}
+
+/* --- Footers --- */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100%;
+    margin-top: 110px;
+}
+footer > p{
+    color: white;
+    margin-left: 5%;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+/*Fonts*/
+@font-face {
+	font-family: NowAlt-Light;
+	src: url('../fonts/NowAlt-Light.otf');
+}
+@font-face {
+	font-family: Roboto-Light;
+	src: url('../fonts/Roboto-Light.ttf');
+}
+/*Animations keyframes*/
+@keyframes goAlternanceAnimationForm{
+    from{
+        margin-top: 0;
+        width: 150px;
+        height: 50px;
+    } 50% {
+        margin-top: -2px;
+        width: 160px;
+        height: 51px;
+    } to {
+        margin-top: 0;
+        width: 150px;
+        height: 50px;
+    }
+}
+@keyframes goAlternanceAnimationButton{
+    from{
+        background-color: teal;
+    } 50% {
+        background-color: rgb(73, 141, 141);
+    } to {
+        background-color: teal;
+    }
 }
