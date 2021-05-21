@@ -180,6 +180,25 @@ body{
     background-color: rgba(65, 105, 225, 0.692) !important;
 }
 
+/* --- Content About Me --- */
+
+#content > #personalText{
+    width: 60%;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4%;
+}
+#content > #personalImg{
+    display: inline-block;
+    width: 35%;
+    position: fixed;
+    right: 5%;
+}
+#personalImg > img{
+    filter: grayscale(40%);
+}
+
 /* --- Footers --- */
 
 footer{
