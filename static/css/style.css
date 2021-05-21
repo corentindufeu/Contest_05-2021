@@ -209,7 +209,7 @@ body{
     height: 100px;
     justify-content: space-evenly;
 }
-#contactArray{
+#contactGrid{
     display: grid;
 	grid-template-columns: repeat(auto-fill, 300px);
 	grid-gap: 10px;
