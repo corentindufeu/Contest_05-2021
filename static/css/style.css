@@ -199,6 +199,42 @@ body{
     filter: grayscale(40%);
 }
 
+/* --- Contact Me --- */
+
+#contactHeader{
+    text-align: center;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-evenly;
+}
+#contactArray{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap: 10px;
+	justify-content: center;
+}
+.contactWay{
+    width: 300px;
+	height: 200px;
+	background-color: #333;
+}
+.contactWay:hover{
+    transition: 100ms;
+    background-color: tomato;
+}
+.contactWay p{
+    color: white;
+    text-align: center;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.contactWay:hover p{
+    color: black;
+}
+
 /* --- Footers --- */
 
 footer{
